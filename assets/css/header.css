@@ -692,7 +692,7 @@
 .mr_menu ul.main-menu li a {
   list-style: none;
   position: relative;
-      /* padding: 14px 17px !important; */
+  padding: 14px 17px !important; 
   font-size: 12px;
   font-weight: var(--fw-light);
   line-height: 24px;

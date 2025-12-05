@@ -2011,5 +2011,24 @@ padding: 10px 0;
         font-size: 27px !important;
     }
 
-
+.img-height{
+    height: 300px !important;
+}
+.grid-item.width-50 {
+    display: contents !important;
+}
+.spinner img{
+    width: 600px !important;
+    max-width: 361px !important;
+}
+    .header .logo img {
+        width: 270px !important;
+        /* height: 31px ! IMPORTANT; */
+        max-width: 277px !important;
+    }
+    .main-text a{
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        color: #fff !important;
+    }
 }
