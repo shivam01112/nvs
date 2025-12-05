@@ -1954,12 +1954,6 @@ padding: 10px 0;
     line-height: 15px;
 }
 
-.submenu-imgs .sub-menu-items img{
- 
-}
-
-
-
 
 @media screen and (max-width: 576px) {
   .wptb-testimonial1 .wptb-item--inner {
@@ -2031,4 +2025,8 @@ padding: 10px 0;
         font-weight: 600 !important;
         color: #fff !important;
     }
+    .wptb-slider.style13 {
+    padding: 100px 0px 0px 0px;
+    height: 66vh;
+}
 }
