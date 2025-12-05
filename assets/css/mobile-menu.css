@@ -1,0 +1,16 @@
+/* Optional — include to ensure smooth closed state on mobile.
+   Add this file to your existing CSS bundle or include as:
+   <link rel="stylesheet" href="assets/css/header-mobile.css">
+   This is minimal and does not change design; it only helps transitions.
+*/
+.main-menu .sub-menu {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 280ms ease;
+  display: none; /* let JS show when needed */
+}
+
+/* When JS opens, it sets inline styles; this class is just a fallback */
+.main-menu li.submenu-open > .sub-menu {
+  display: block;
+}

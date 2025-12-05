@@ -1,0 +1,165 @@
+/* Custom Dropdown Styling */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu {
+    display: none;
+    position: absolute;
+    left: -300px;
+    transform: translateX(-25%);
+    background: #121212;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+/* Special styling for Applications dropdown */
+.mainnav .main-menu li.menu-item-has-children:hover > .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    gap: 15px;
+    height: auto;
+    justify-content: flex-start;
+}
+
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li {
+    flex: 0 0 calc(33.333% - 10px);
+    margin: 0;
+    padding: 0;
+}
+
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li > a {
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    height: 100%;
+}
+
+/* Icons for Applications menu items */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li > a::before {
+    font-family: "FontAwesome";
+    margin-right: 10px;
+    font-size: 16px;
+    min-width: 20px;
+    color: #ff0000; /* Theme red color for icons */
+    display: inline-block;
+}
+
+/* Specific icons for each menu item - More relevant Font Awesome icons */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(1) > a::before { content: "\f1ad"; } /* Building */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(2) > a::before { content: "\f7d9"; } /* Tools */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(3) > a::before { content: "\f085"; } /* Cogs */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(4) > a::before { content: "\f080"; } /* Chart-bar */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(5) > a::before { content: "\f0c0"; } /* Users */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(6) > a::before { content: "\f46d"; } /* Project Diagram */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(7) > a::before { content: "\f3ed"; } /* Shield Alt */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(8) > a::before { content: "\f1c0"; } /* Database */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(9) > a::before { content: "\f135"; } /* Rocket */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(10) > a::before { content: "\f3cd"; } /* Mobile Alt */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(11) > a::before { content: "\f5fc"; } /* Laptop Code */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(12) > a::before { content: "\f0c2"; } /* Cloud */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(13) > a::before { content: "\f6ff"; } /* Network Wired */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(14) > a::before { content: "\f023"; } /* Lock */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(15) > a::before { content: "\f030"; } /* Camera */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(16) > a::before { content: "\f080"; } /* Chart Bar */
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li:nth-child(17) > a::before { content: "\f233"; } /* Server */
+
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li > a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.mainnav .main-menu li.menu-item-has-children:hover > .sub-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    padding: 25px;
+    gap: 15px;
+    padding-right: 55px;
+    background: #0a0839;
+    border: 1px solid #f4f4f4;
+}
+
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li {
+    padding: 0;
+    margin: 0;
+}
+
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li > a {
+color: #fff !important;
+    padding: 10px 12px !important;
+    /* display: block; */
+    font-size: 13px !important;
+    border-radius: 6px !important;
+    flex-wrap: nowrap !important;
+    transition: all 0.3s 
+ease;
+    border: 1px solid rgb(255 255 255 / 32%);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.mainnav .main-menu li.menu-item-has-children > .sub-menu > li > a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1200px) {
+    .mr_menu .main-menu li.menu-item-has-children > .sub-menu {
+        display: none;
+        position: static !important;
+        transform: none !important;
+        left: 0 !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        background: #121212;
+        padding: 10px;
+        border: none;
+        box-shadow: none;
+        opacity: 1 !important;
+        visibility: visible !important;
+        max-height: none !important;
+        transition: none !important;
+    }
+
+    .mr_menu .main-menu li.menu-item-has-children.nav_open > .sub-menu {
+        display: flex !important;
+        flex-direction: column;
+        padding: 10px 0 10px 15px;
+        gap: 8px;
+        opacity: 1;
+        visibility: visible;
+        max-height: 2000px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mr_menu .main-menu li.menu-item-has-children > .sub-menu > li {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+    .mr_menu .main-menu li.menu-item-has-children > .sub-menu > li > a {
+        padding: 10px 15px;
+        margin: 2px 0;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 4px;
+        display: flex !important;
+        align-items: center;
+    }
+
+    .mr_menu .main-menu li.menu-item-has-children > .sub-menu > li > a::before {
+        font-size: 14px;
+        min-width: 18px;
+    }
+
+    .mr_menu .main-menu li.menu-item-has-children > .sub-menu > li > a:hover {
+        transform: none;
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
