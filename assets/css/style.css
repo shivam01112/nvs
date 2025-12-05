@@ -2007,5 +2007,9 @@ padding: 10px 0;
         font-size: var(--fs-30);
         font-size: 27px !important;
     }
+    .wptb-page-heading .wptb-item--title {
+        font-size: 27px !important;
+    }
+
 
 }
