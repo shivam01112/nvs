@@ -439,6 +439,8 @@ Ready Components Stylesheet
     right: 65px;
     bottom: 50px;
 }
+
+
 .wptb-swiper-navigation.style1 .wptb-swiper-arrow {
     position: relative;
     top: auto;
@@ -6704,4 +6706,10 @@ color: #fff;
 
 .related_products .swiper-slide{
     margin-left: 25px;
+}
+
+
+ .styleplace{
+    right: 66px !important;
+    bottom: -20px !important;
 }
